@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[\$sql_ = "";
-\$result_ = mysql_query(\$sql_ ,\$msDb) or die("Error: sql_ ".mysql_error());
-if(mysql_num_rows(\$result_)){
-	while (\$row_ = mysql_fetch_assoc(\$result_)) {
+	<content><![CDATA[\$sql$1 = "";
+\$result$2 = mysql_query(\$sql$3) or die("Error: sql$4 ".mysql_error());
+if(mysql_num_rows(\$result$5)){
+	while (\$row$6 = mysql_fetch_assoc(\$result$7)) {
 		
 	}
 }else{

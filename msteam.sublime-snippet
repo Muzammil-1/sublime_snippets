@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-if(\$_SESSION['man_user'] = 'Bob' || \$_SESSION['man_user'] = 'Muzammil' || \$_SESSION['man_user'] = 'Muralidharan'){
-	
+if(\$_SESSION['man_user'] = 'Bob' || \$_SESSION['man_user'] = 'Muzammil' || \$_SESSION['man_user'] = 'Muralidharan' || \$_SESSION['man_user'] = 'Ahila' || \$_SESSION['man_user'] = 'Priyankaa'){
+	$1
 }		
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

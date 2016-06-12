@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\$action = (isset(\$_GET['action']) && \$_GET['action'] != '') ? mysql_real_escape_string(\$_GET['action']) : '';
+\$variable = (isset(\$_GET['variable']) && \$_GET['variable'] != '') ? mysql_real_escape_string(\$_GET['variable']) : '';
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>get</tabTrigger>

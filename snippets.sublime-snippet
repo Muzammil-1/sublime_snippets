@@ -1,0 +1,20 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content>
+  	alert -> js alert script
+    fo -> foxyDb
+    get
+    ms -> msDb
+    msteam -> session ms team members
+    phpalert -> php alert script
+    phpsql
+    post
+    sql_array
+    xxs_clean
+  	</content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snippets</tabTrigger>
+  <description>List of Snippets repository</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>text.plain</scope> -->
+</snippet>

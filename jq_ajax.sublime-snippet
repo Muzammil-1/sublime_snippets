@@ -1,0 +1,23 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+            \$.ajax({
+                url: '$1',
+                type: 'POST',
+                data: {
+                  	$2 : '$3',
+                },
+                dataType:"json",
+                success: function(response) {
+                  if(response.status === "success") {
+                  	$4
+                  }
+               	}
+            });
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jq_ajax</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope></scope>
+</snippet>

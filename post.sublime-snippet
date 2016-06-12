@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\$action = (isset(\$_POST['action']) && \$_POST['action'] != '') ? mysql_real_escape_string(\$_POST['action']) : '';
+\$variable = (isset(\$_POST['variable']) && \$_POST['variable'] != '') ? mysql_real_escape_string(\$_POST['variable']) : '';
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>post</tabTrigger>
