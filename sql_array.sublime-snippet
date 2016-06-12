@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+\$sql_status="SELECT `host` FROM config WHERE customer_level < 4";
+	\$result_status=mysql_query(\$sql_status, ) or die ("<h3>Error</h3><p><b>".mysql_error()."</b></p>");
+	while(\$row=mysql_fetch_array(\$result_status)) {
+		\$host_array[]= "'".\$row['host']."'";
+	}
+ 	\$host_list = implode(',', \$host_array);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sql_array</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,6 @@
+/Package Control.cache
+*.sublime-settings
+*.last-run
+*.merged-ca-bundle
+*.user-ca-bundle
+

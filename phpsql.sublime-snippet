@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[\$sql_ = "";
+\$result_ = mysql_query(\$sql_ ,\$msDb) or die("Error: sql_ ".mysql_error());
+if(mysql_num_rows(\$result_)){
+	while (\$row_ = mysql_fetch_assoc(\$result_)) {
+		
+	}
+}else{
+	echo "No records";
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>phpsql</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
