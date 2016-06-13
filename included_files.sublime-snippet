@@ -1,0 +1,16 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+\$included_files = get_included_files();
+
+foreach (\$included_files as \$filename) {
+    echo "\$filename\n";
+}
+die();
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>included_files</tabTrigger>
+  <description>List of files included in a page</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope></scope>
+</snippet>
