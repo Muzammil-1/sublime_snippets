@@ -1,0 +1,43 @@
+<snippet>
+  <!-- Example: Hello, \${1:this} is a \${2:snippet}. -->
+  <content><![CDATA[
+function send_email(\$msg,\$to,\$subject){
+    require_once '../../plugins/PHPMailer-master/class.phpmailer.php';
+    require_once '../../plugins/PHPMailer-master/class.smtp.php';
+
+    \$mail = new PHPMailer();
+
+    \$mandrill_host   = "smtp.mandrillapp.com";
+    \$mandrill_user   = "updates@touch2success.com";
+    \$mandrill_pass   = "slszGTOGNEtqE0LI_tkjyw";
+    \$mandrill_port   = "587";
+    \$mail->IsSMTP();  // telling the class to use SMTP
+    // \$mail->SMTPDebug  = 1;
+    \$mail->SMTPSecure = "tls";
+    \$mail->SMTPAuth   = true;
+    \$mail->Host       = \$mandrill_host;
+    \$mail->From       = 'updates@touch2success.com';//'info@uktech.co';
+    \$mail->FromName   = 'Uk Tech ltd';
+    \$mail->Port       = \$mandrill_port;
+    \$mail->IsHTML (true);
+    \$mail->Username   = \$mandrill_user;
+    \$mail->Password   = \$mandrill_pass;
+
+    \$mail->AddAddress(\$to);
+    \$mail->AddBCC('$1');
+    \$mail->Subject    = \$subject;
+    \$mail->Body       = \$msg;
+
+    if(!\$mail->Send()) {
+        return false;
+    }else{
+        return true;
+    }
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ms_email</tabTrigger>
+  <description>Email script for sending email from MS</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope></scope>
+</snippet>
