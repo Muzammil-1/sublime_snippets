@@ -1,0 +1,12 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+\$mandrill = new mandrill_mailer();
+\$mandrill->send_mail('no-reply@touch2success.com', 'uk-tech-ltd', \$to, \$subject, \$msg,'bobstakaway.sy2.com');
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mail</tabTrigger>
+  <description>snippet to send mail using mandrill</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php</scope> -->
+</snippet>
